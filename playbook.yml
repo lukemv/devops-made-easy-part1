@@ -1,0 +1,6 @@
+---
+- hosts: all
+  become: True
+  tasks:
+  - name: Run a Command
+    shell: echo "Hello" > /tmp/hello
