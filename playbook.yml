@@ -4,3 +4,13 @@
   roles:
   - epel
   - nginx
+
+- hosts: api-servers
+  become: True
+  roles:
+  - api
+
+- hosts: proxy-servers
+  become: True
+  roles:
+  - proxy
